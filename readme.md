@@ -20,8 +20,9 @@ graph TD
     B[Conv2d, kernel=3] --> C1;
     C1[ReLu] --> C;
     C[MaxPooling, kernel=2] --> D1;
-    D1[ReLu] --> D;
-    D[Conv2d, kernel=3] --> F[Linear,hidden];
+    D1[Conv2d, kernel=3] --> D2;
+    D2[ReLu] --> D;
+    D[MaxPooling, kernel=2] --> F[Linear,hidden];
     
 ```
 
