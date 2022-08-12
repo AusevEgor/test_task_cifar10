@@ -22,8 +22,7 @@ graph TD
     C[MaxPooling, kernel=2] --> D1;
     D1[Conv2d, kernel=3] --> D2;
     D2[ReLu] --> D;
-    D[MaxPooling, kernel=2] --> F[Linear,hidden];
-    
+    D[MaxPooling, kernel=2] --> F[Linear,hidden];    
 ```
 
 Модель декодера симметрична Енкодеру, но в противоположном порядке.
